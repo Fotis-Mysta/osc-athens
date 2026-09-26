@@ -1,0 +1,78 @@
+{
+  "_comment": "One entry per source. Text fields with el/en carry both languages. highlights are the passages you want to share; keep them short and give the page or section in loc. club: omit, or {status: upcoming|past, date: YYYY-MM-DD, link, notes}. SAMPLE ENTRIES: the 'why' and 'highlights' below are placeholders written by Claude, not verbatim quotes. Replace with your own before publishing.",
+  "items": [
+    {
+      "id": "unesco-2021",
+      "type": "report",
+      "title": "UNESCO Recommendation on Open Science",
+      "authors": "UNESCO",
+      "year": 2021,
+      "venue": "UNESCO",
+      "url": "https://doi.org/10.54677/MNMH8546",
+      "oa": true,
+      "tags": ["Ανοικτή πρόσβαση", "Ανοικτά δεδομένα και FAIR", "Επιστήμη των πολιτών"],
+      "why": {
+        "el": "Το κείμενο που έδωσε στην ανοικτή επιστήμη κοινό ορισμό σε 193 κράτη. Καλό σημείο εκκίνησης για όποιον θέλει να καταλάβει τι εννοούμε όταν λέμε «ανοικτή επιστήμη» και γιατί δεν είναι μόνο ανοικτή πρόσβαση.",
+        "en": "The text that gave open science a shared definition across 193 states. A good starting point for anyone who wants to understand what we mean by open science and why it is more than open access."
+      },
+      "highlights": [
+        {"loc": "Ενότητα I, ορισμός", "el": "[Απόσπασμα προς συμπλήρωση: ο ορισμός της ανοικτής επιστήμης ως συνόλου αρχών και πρακτικών]", "en": "[Passage to add: the definition of open science as a set of principles and practices]"},
+        {"loc": "Ενότητα III, αξίες", "el": "[Απόσπασμα προς συμπλήρωση: ποιότητα, συλλογικό όφελος, ισότητα, ποικιλομορφία]", "en": "[Passage to add: quality, collective benefit, equity, diversity]"}
+      ],
+      "club": {"status": "upcoming", "date": "2026-11-12", "link": "/#contact", "notes": ""}
+    },
+    {
+      "id": "wilkinson-2016",
+      "type": "article",
+      "title": "The FAIR Guiding Principles for scientific data management and stewardship",
+      "authors": "Wilkinson, M. D. et al.",
+      "year": 2016,
+      "venue": "Scientific Data",
+      "url": "https://doi.org/10.1038/sdata.2016.18",
+      "oa": true,
+      "tags": ["Ανοικτά δεδομένα και FAIR"],
+      "why": {
+        "el": "Το άρθρο που όρισε τα FAIR: ευρέσιμα, προσβάσιμα, διαλειτουργικά, επαναχρησιμοποιήσιμα. Σύντομο, και εξηγεί γιατί «ανοικτά» και «FAIR» δεν είναι το ίδιο πράγμα.",
+        "en": "The article that defined FAIR: findable, accessible, interoperable, reusable. Short, and explains why open and FAIR are not the same thing."
+      },
+      "highlights": [
+        {"loc": "Box 2", "el": "[Απόσπασμα προς συμπλήρωση: οι 15 αρχές]", "en": "[Passage to add: the 15 principles]"}
+      ]
+    },
+    {
+      "id": "munafo-2017",
+      "type": "article",
+      "title": "A manifesto for reproducible science",
+      "authors": "Munafò, M. R. et al.",
+      "year": 2017,
+      "venue": "Nature Human Behaviour",
+      "url": "https://doi.org/10.1038/s41562-016-0021",
+      "oa": true,
+      "tags": ["Αναπαραγωγιμότητα", "Προδημοσιεύσεις"],
+      "why": {
+        "el": "Χάρτης των προβλημάτων που κάνουν την έρευνα δύσκολο να επαναληφθεί και των πρακτικών που τα αντιμετωπίζουν, από την προεγγραφή μέχρι την ανοικτή αξιολόγηση. Καλό για πρώτη συζήτηση λέσχης.",
+        "en": "A map of the problems that make research hard to reproduce and the practices that address them, from preregistration to open review. A good first journal club read."
+      },
+      "highlights": [
+        {"loc": "Figure 1", "el": "[Απόσπασμα προς συμπλήρωση: ο κύκλος της έρευνας και πού μπαίνουν οι προκαταλήψεις]", "en": "[Passage to add: the research cycle and where biases enter]"}
+      ],
+      "club": {"status": "past", "date": "2026-10-08", "link": "", "notes": "[Σημειώσεις της συζήτησης, προαιρετικά]"}
+    },
+    {
+      "id": "nosek-2015",
+      "type": "article",
+      "title": "Promoting an open research culture",
+      "authors": "Nosek, B. A. et al.",
+      "year": 2015,
+      "venue": "Science",
+      "url": "https://doi.org/10.1126/science.aab2374",
+      "oa": true,
+      "tags": ["Μεταρρύθμιση αξιολόγησης της έρευνας", "Ανοικτά δεδομένα και FAIR"],
+      "why": {
+        "el": "Οι κατευθυντήριες γραμμές TOP: πώς περιοδικά και χρηματοδότες μπορούν να κάνουν τη διαφάνεια προϋπόθεση αντί για εξαίρεση. Χρήσιμο για όποιον θέλει να πιέσει για αλλαγές στο ίδρυμά του.",
+        "en": "The TOP guidelines: how journals and funders can make transparency the rule rather than the exception. Useful for anyone who wants to push for change at their institution."
+      },
+      "highlights": []
+    }
+  ]
+}
