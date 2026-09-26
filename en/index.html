@@ -166,6 +166,12 @@ section{padding:78px 0;border-top:1px solid var(--border)}
 .pform .msg.ok{display:block;color:var(--olive)}
 .pform .msg.err{display:block;color:#b3261e}
 .pform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.pform .grp{margin-top:14px}
+.pform .grp .gl{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.pform .opts{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}
+.pform .opts label{display:flex;gap:8px;align-items:flex-start;margin:0;font-size:14px;font-weight:400;color:var(--dark);line-height:1.4}
+.pform .opts input{margin-top:3px;flex:none;width:15px;height:15px;accent-color:var(--navy)}
+@media(max-width:600px){.pform .opts{grid-template-columns:1fr}}
 @media(max-width:900px){.pledge{grid-template-columns:1fr}}
 @media(max-width:600px){.pform .row{grid-template-columns:1fr}.pledge .text{padding:30px 24px}.pform{padding:26px 20px}}
 
@@ -424,6 +430,21 @@ footer .lk a:hover{color:var(--olive)}
               <option>Librarian</option>
               <option>Other</option>
             </select>
+          </div>
+        </div>
+        <div class="grp">
+          <div class="gl">Open science interests</div>
+          <div class="opts">
+            <label><input type="checkbox" name="interests[]" value="Open access"> Open access</label>
+            <label><input type="checkbox" name="interests[]" value="Open data and FAIR"> Open data and FAIR</label>
+            <label><input type="checkbox" name="interests[]" value="Reproducibility"> Reproducibility</label>
+            <label><input type="checkbox" name="interests[]" value="Preprints"> Preprints</label>
+            <label><input type="checkbox" name="interests[]" value="Open peer review"> Open peer review</label>
+            <label><input type="checkbox" name="interests[]" value="Open educational resources"> Open educational resources</label>
+            <label><input type="checkbox" name="interests[]" value="Citizen science"> Citizen science</label>
+            <label><input type="checkbox" name="interests[]" value="Research assessment reform"> Research assessment reform</label>
+            <label><input type="checkbox" name="interests[]" value="Open source software"> Open source software</label>
+            <label><input type="checkbox" name="interests[]" value="Other"> Other</label>
           </div>
         </div>
         <label class="chk"><input type="checkbox" name="volunteer" value="yes">
