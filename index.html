@@ -212,7 +212,7 @@ footer .lk a:hover{color:var(--olive)}
       <a href="#why">Γιατί έχει σημασία</a>
       <a href="#events">Εκδηλώσεις</a>
       <a href="#team">Ομάδα</a>
-      <a href="#support">Υποστήριξη</a>
+      <a href="/support/">Υποστήριξη</a>
       <a href="#join" class="btn">Γίνε μέλος <span class="ar">&rarr;</span></a>
       <a href="/en/" class="lang" hreflang="en" title="English">EN</a>
     </nav>
@@ -386,79 +386,6 @@ footer .lk a:hover{color:var(--olive)}
   </div>
 </section>
 
-<!-- ============ PLEDGE ============ -->
-<section id="support">
-  <div class="wrap">
-    <div class="eyebrow">Δήλωση υποστήριξης</div>
-    <h2 class="sec-h">Στήριξε την κοινότητα</h2>
-    <p class="sec-lead">Δεν χρειάζεται να είσαι μέλος για να στηρίξεις αυτό που κάνουμε. Αρκεί να συμμερίζεσαι
-      τις αρχές μας και να θέλεις να μαθαίνεις τι ετοιμάζουμε.</p>
-    <div class="pledge">
-      <div class="text">
-        <h3>Στηρίζω την Κοινότητα Ανοικτής Επιστήμης Αθήνας.</h3>
-        <p>Πιστεύω ότι η έρευνα γίνεται καλύτερη όταν μοιράζεται: όταν τα δεδομένα, οι μέθοδοι και τα
-          αποτελέσματα είναι ανοικτά σε όποιον θέλει να τα ελέγξει, να τα επαναχρησιμοποιήσει και να
-          χτίσει πάνω τους.</p>
-        <p>Πιστεύω ότι η ανοικτή πρακτική μαθαίνεται καλύτερα με αλληλοϋποστήριξη παρά με επιβολή,
-          και ότι η αναγνώριση ανήκει σε όλους όσοι συμβάλλουν.</p>
-        <p class="sign">Υπογράφοντας, δηλώνω ότι συμμερίζομαι αυτές τις αρχές και ότι θέλω να
-          ενημερώνομαι για τις δράσεις της κοινότητας.</p>
-      </div>
-      <form id="pledge-form" class="pform" action="https://formspree.io/f/mnpnbyqq" method="POST"
-            data-ok="Ευχαριστούμε! Η υποστήριξή σου καταγράφηκε. Θα σε ενημερώνουμε για ό,τι έρχεται."
-            data-err="Κάτι πήγε στραβά. Δοκίμασε ξανά ή γράψε μας στο info@osc-athens.org.">
-        <input type="hidden" name="_subject" value="Νέα δήλωση υποστήριξης OSC Athens">
-        <input type="hidden" name="language" value="el">
-        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
-        <label for="p-name">Ονοματεπώνυμο *</label>
-        <input id="p-name" type="text" name="name" required autocomplete="name">
-        <label for="p-email">Email *</label>
-        <input id="p-email" type="email" name="email" required autocomplete="email">
-        <div class="row">
-          <div>
-            <label for="p-org">Ίδρυμα ή φορέας</label>
-            <input id="p-org" type="text" name="institution" autocomplete="organization">
-          </div>
-          <div>
-            <label for="p-role">Ιδιότητα</label>
-            <select id="p-role" name="role">
-              <option value="">Επίλεξε</option>
-              <option>Φοιτητής/τρια</option>
-              <option>Υποψήφιος/α διδάκτορας</option>
-              <option>Ερευνητής/τρια</option>
-              <option>Βιβλιοθηκονόμος</option>
-              <option>Άλλο</option>
-            </select>
-          </div>
-        </div>
-        <div class="grp">
-          <div class="gl">Ενδιαφέροντα ανοικτής επιστήμης</div>
-          <div class="opts">
-            <label><input type="checkbox" name="interests[]" value="Ανοικτή πρόσβαση"> Ανοικτή πρόσβαση</label>
-            <label><input type="checkbox" name="interests[]" value="Ανοικτά δεδομένα και FAIR"> Ανοικτά δεδομένα και FAIR</label>
-            <label><input type="checkbox" name="interests[]" value="Αναπαραγωγιμότητα"> Αναπαραγωγιμότητα</label>
-            <label><input type="checkbox" name="interests[]" value="Προδημοσιεύσεις"> Προδημοσιεύσεις</label>
-            <label><input type="checkbox" name="interests[]" value="Ανοικτοί εκπαιδευτικοί πόροι"> Ανοικτοί εκπαιδευτικοί πόροι</label>
-            <label><input type="checkbox" name="interests[]" value="Επιστήμη των πολιτών"> Επιστήμη των πολιτών</label>
-            <label><input type="checkbox" name="interests[]" value="Μεταρρύθμιση αξιολόγησης της έρευνας"> Μεταρρύθμιση αξιολόγησης της έρευνας</label>
-            <label><input type="checkbox" name="interests[]" value="Ανοικτό λογισμικό"> Ανοικτό λογισμικό</label>
-          </div>
-        </div>
-        <div class="consent">
-        <label class="chk"><input type="checkbox" name="volunteer" value="yes">
-          Θέλω να συμμετέχω ενεργά στην οργάνωση δράσεων.</label>
-        <label class="chk"><input type="checkbox" name="public_listing" value="yes">
-          Συμφωνώ να εμφανίζονται το όνομα, το ίδρυμα και η ιδιότητά μου δημόσια στη σελίδα των υποστηρικτών. Το email μου δεν δημοσιεύεται.</label>
-        <label class="chk"><input type="checkbox" name="consent" value="yes" required>
-          Συμφωνώ να λαμβάνω ενημερώσεις από την OSC Athens στο email μου. Μπορώ να διαγραφώ όποτε θέλω. *</label>
-        </div>
-        <button type="submit" class="btn">Υπογράφω <span class="ar">&rarr;</span></button>
-        <p class="msg" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
-</section>
-
 <!-- ============ JOIN ============ -->
 <section id="join">
   <div class="wrap">
@@ -486,26 +413,12 @@ footer .lk a:hover{color:var(--olive)}
       <a href="#why">Γιατί έχει σημασία</a>
       <a href="#events">Εκδηλώσεις</a>
       <a href="#team">Ομάδα</a>
-      <a href="#support">Υποστήριξη</a>
+      <a href="/support/">Υποστήριξη</a>
       <a href="#join">Συμμετοχή</a>
       <a href="/en/" hreflang="en">English</a>
     </div>
   </div>
 </footer>
 
-<script>
-(function(){
-  var f=document.getElementById('pledge-form'); if(!f) return;
-  var m=f.querySelector('.msg'), b=f.querySelector('button');
-  f.addEventListener('submit',function(e){
-    e.preventDefault(); b.disabled=true; m.className='msg';
-    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
-      .then(function(r){ if(r.ok){ f.reset(); m.textContent=f.dataset.ok; m.className='msg ok'; }
-                         else { m.textContent=f.dataset.err; m.className='msg err'; } })
-      .catch(function(){ m.textContent=f.dataset.err; m.className='msg err'; })
-      .finally(function(){ b.disabled=false; });
-  });
-})();
-</script>
 </body>
 </html>
