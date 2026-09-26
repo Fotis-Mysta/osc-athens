@@ -145,6 +145,30 @@ section{padding:78px 0;border-top:1px solid var(--border)}
 .join .k{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
 .join .v{font-size:16px;font-weight:700;color:var(--navy);margin-top:6px;word-break:break-word}
 
+/* ---------- pledge form ---------- */
+.pledge{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;margin-top:44px;align-items:start}
+.pledge .text{background:var(--navy);border-radius:18px;padding:40px 38px;color:#fff}
+.pledge .text h3{color:#fff;font-size:24px;font-weight:800;margin-bottom:18px}
+.pledge .text p{font-size:16px;color:#d6dcea;margin-bottom:14px;line-height:1.6}
+.pledge .text p.sign{color:var(--mint);font-weight:700;margin-top:22px;margin-bottom:0}
+.pform{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:34px 32px;box-shadow:var(--shadow)}
+.pform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pform label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin:14px 0 6px}
+.pform > label:first-child{margin-top:0}
+.pform .row label{margin-top:14px}
+.pform input[type=text],.pform input[type=email],.pform select{width:100%;font:inherit;font-size:15px;
+  padding:11px 13px;border:1px solid var(--border-2);border-radius:8px;background:#fff;color:var(--dark)}
+.pform input:focus,.pform select:focus{outline:2px solid var(--mint);outline-offset:1px;border-color:var(--mint)}
+.pform .chk{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:400;color:var(--slate);margin-top:16px;line-height:1.5}
+.pform .chk input{margin-top:4px;flex:none;width:16px;height:16px;accent-color:var(--navy)}
+.pform button{margin-top:22px;width:100%;cursor:pointer;justify-content:center;font-family:inherit}
+.pform .msg{margin-top:16px;font-size:15px;font-weight:700;display:none}
+.pform .msg.ok{display:block;color:var(--olive)}
+.pform .msg.err{display:block;color:#b3261e}
+.pform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media(max-width:900px){.pledge{grid-template-columns:1fr}}
+@media(max-width:600px){.pform .row{grid-template-columns:1fr}.pledge .text{padding:30px 24px}.pform{padding:26px 20px}}
+
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--border);padding:44px 0 56px;background:#f2f0e9}
 .ft{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
@@ -181,6 +205,7 @@ footer .lk a:hover{color:var(--olive)}
       <a href="#why">Why it matters</a>
       <a href="#events">Events</a>
       <a href="#team">Team</a>
+      <a href="#support">Support</a>
       <a href="#join" class="btn">Join us <span class="ar">&rarr;</span></a>
       <a href="/" class="lang" hreflang="el" title="Ελληνικά">EL</a>
     </nav>
@@ -357,6 +382,61 @@ footer .lk a:hover{color:var(--olive)}
   </div>
 </section>
 
+<!-- ============ PLEDGE ============ -->
+<section id="support">
+  <div class="wrap">
+    <div class="eyebrow">Statement of support</div>
+    <h2 class="sec-h">Support the community</h2>
+    <p class="sec-lead">You do not have to be a member to support what we do. It is enough to share
+      our principles and want to hear what we are planning.</p>
+    <div class="pledge">
+      <div class="text">
+        <h3>I support the Open Science Community Athens.</h3>
+        <p>I believe research is better when it is shared: when data, methods and results are open
+          to anyone who wants to check them, reuse them and build on them.</p>
+        <p>I believe open practice is learned better through peer support than through mandates,
+          and that credit belongs to everyone who contributes.</p>
+        <p class="sign">By signing, I declare that I share these principles and that I want to be kept
+          informed about the community&rsquo;s activities.</p>
+      </div>
+      <form id="pledge-form" class="pform" action="https://formspree.io/f/mnpnbyqq" method="POST"
+            data-ok="Thank you! Your support has been recorded. We will keep you posted."
+            data-err="Something went wrong. Please try again or email us at info@osc-athens.org.">
+        <input type="hidden" name="_subject" value="New OSC Athens statement of support">
+        <input type="hidden" name="language" value="en">
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        <label for="p-name">Full name *</label>
+        <input id="p-name" type="text" name="name" required autocomplete="name">
+        <label for="p-email">Email *</label>
+        <input id="p-email" type="email" name="email" required autocomplete="email">
+        <div class="row">
+          <div>
+            <label for="p-org">Institution or organisation</label>
+            <input id="p-org" type="text" name="institution" autocomplete="organization">
+          </div>
+          <div>
+            <label for="p-role">Role</label>
+            <select id="p-role" name="role">
+              <option value="">Select</option>
+              <option>Student</option>
+              <option>PhD candidate</option>
+              <option>Researcher</option>
+              <option>Librarian</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <label class="chk"><input type="checkbox" name="volunteer" value="yes">
+          I would like to help organise activities.</label>
+        <label class="chk"><input type="checkbox" name="consent" value="yes" required>
+          I agree to receive updates from OSC Athens by email. I can unsubscribe at any time. *</label>
+        <button type="submit" class="btn">Sign <span class="ar">&rarr;</span></button>
+        <p class="msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- ============ JOIN ============ -->
 <section id="join">
   <div class="wrap">
@@ -385,10 +465,26 @@ footer .lk a:hover{color:var(--olive)}
       <a href="#why">Why it matters</a>
       <a href="#events">Events</a>
       <a href="#team">Team</a>
+      <a href="#support">Support</a>
       <a href="#join">Join</a>
     </div>
   </div>
 </footer>
 
+
+<script>
+(function(){
+  var f=document.getElementById('pledge-form'); if(!f) return;
+  var m=f.querySelector('.msg'), b=f.querySelector('button');
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); b.disabled=true; m.className='msg';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){ if(r.ok){ f.reset(); m.textContent=f.dataset.ok; m.className='msg ok'; }
+                         else { m.textContent=f.dataset.err; m.className='msg err'; } })
+      .catch(function(){ m.textContent=f.dataset.err; m.className='msg err'; })
+      .finally(function(){ b.disabled=false; });
+  });
+})();
+</script>
 </body>
 </html>

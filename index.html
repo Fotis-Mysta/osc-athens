@@ -145,6 +145,30 @@ section{padding:78px 0;border-top:1px solid var(--border)}
 .join .k{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--olive)}
 .join .v{font-size:16px;font-weight:700;color:var(--navy);margin-top:6px;word-break:break-word}
 
+/* ---------- pledge form ---------- */
+.pledge{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;margin-top:44px;align-items:start}
+.pledge .text{background:var(--navy);border-radius:18px;padding:40px 38px;color:#fff}
+.pledge .text h3{color:#fff;font-size:24px;font-weight:800;margin-bottom:18px}
+.pledge .text p{font-size:16px;color:#d6dcea;margin-bottom:14px;line-height:1.6}
+.pledge .text p.sign{color:var(--mint);font-weight:700;margin-top:22px;margin-bottom:0}
+.pform{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:34px 32px;box-shadow:var(--shadow)}
+.pform .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.pform label{display:block;font-size:13px;font-weight:700;color:var(--navy);margin:14px 0 6px}
+.pform > label:first-child{margin-top:0}
+.pform .row label{margin-top:14px}
+.pform input[type=text],.pform input[type=email],.pform select{width:100%;font:inherit;font-size:15px;
+  padding:11px 13px;border:1px solid var(--border-2);border-radius:8px;background:#fff;color:var(--dark)}
+.pform input:focus,.pform select:focus{outline:2px solid var(--mint);outline-offset:1px;border-color:var(--mint)}
+.pform .chk{display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:400;color:var(--slate);margin-top:16px;line-height:1.5}
+.pform .chk input{margin-top:4px;flex:none;width:16px;height:16px;accent-color:var(--navy)}
+.pform button{margin-top:22px;width:100%;cursor:pointer;justify-content:center;font-family:inherit}
+.pform .msg{margin-top:16px;font-size:15px;font-weight:700;display:none}
+.pform .msg.ok{display:block;color:var(--olive)}
+.pform .msg.err{display:block;color:#b3261e}
+.pform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media(max-width:900px){.pledge{grid-template-columns:1fr}}
+@media(max-width:600px){.pform .row{grid-template-columns:1fr}.pledge .text{padding:30px 24px}.pform{padding:26px 20px}}
+
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--border);padding:44px 0 56px;background:#f2f0e9}
 .ft{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-start}
@@ -180,6 +204,7 @@ footer .lk a:hover{color:var(--olive)}
       <a href="#why">Γιατί έχει σημασία</a>
       <a href="#events">Εκδηλώσεις</a>
       <a href="#team">Ομάδα</a>
+      <a href="#support">Υποστήριξη</a>
       <a href="#join" class="btn">Γίνε μέλος <span class="ar">&rarr;</span></a>
       <a href="/en/" class="lang" hreflang="en" title="English">EN</a>
     </nav>
@@ -353,6 +378,62 @@ footer .lk a:hover{color:var(--olive)}
   </div>
 </section>
 
+<!-- ============ PLEDGE ============ -->
+<section id="support">
+  <div class="wrap">
+    <div class="eyebrow">Δήλωση υποστήριξης</div>
+    <h2 class="sec-h">Στήριξε την κοινότητα</h2>
+    <p class="sec-lead">Δεν χρειάζεται να είσαι μέλος για να στηρίξεις αυτό που κάνουμε. Αρκεί να συμμερίζεσαι
+      τις αρχές μας και να θέλεις να μαθαίνεις τι ετοιμάζουμε.</p>
+    <div class="pledge">
+      <div class="text">
+        <h3>Στηρίζω την Κοινότητα Ανοικτής Επιστήμης Αθήνας.</h3>
+        <p>Πιστεύω ότι η έρευνα γίνεται καλύτερη όταν μοιράζεται: όταν τα δεδομένα, οι μέθοδοι και τα
+          αποτελέσματα είναι ανοικτά σε όποιον θέλει να τα ελέγξει, να τα επαναχρησιμοποιήσει και να
+          χτίσει πάνω τους.</p>
+        <p>Πιστεύω ότι η ανοικτή πρακτική μαθαίνεται καλύτερα με αλληλοϋποστήριξη παρά με επιβολή,
+          και ότι η αναγνώριση ανήκει σε όλους όσοι συμβάλλουν.</p>
+        <p class="sign">Υπογράφοντας, δηλώνω ότι συμμερίζομαι αυτές τις αρχές και ότι θέλω να
+          ενημερώνομαι για τις δράσεις της κοινότητας.</p>
+      </div>
+      <form id="pledge-form" class="pform" action="https://formspree.io/f/mnpnbyqq" method="POST"
+            data-ok="Ευχαριστούμε! Η υποστήριξή σου καταγράφηκε. Θα σε ενημερώνουμε για ό,τι έρχεται."
+            data-err="Κάτι πήγε στραβά. Δοκίμασε ξανά ή γράψε μας στο info@osc-athens.org.">
+        <input type="hidden" name="_subject" value="Νέα δήλωση υποστήριξης OSC Athens">
+        <input type="hidden" name="language" value="el">
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        <label for="p-name">Ονοματεπώνυμο *</label>
+        <input id="p-name" type="text" name="name" required autocomplete="name">
+        <label for="p-email">Email *</label>
+        <input id="p-email" type="email" name="email" required autocomplete="email">
+        <div class="row">
+          <div>
+            <label for="p-org">Ίδρυμα ή φορέας</label>
+            <input id="p-org" type="text" name="institution" autocomplete="organization">
+          </div>
+          <div>
+            <label for="p-role">Ιδιότητα</label>
+            <select id="p-role" name="role">
+              <option value="">Επίλεξε</option>
+              <option>Φοιτητής/τρια</option>
+              <option>Υποψήφιος/α διδάκτορας</option>
+              <option>Ερευνητής/τρια</option>
+              <option>Βιβλιοθηκονόμος</option>
+              <option>Άλλο</option>
+            </select>
+          </div>
+        </div>
+        <label class="chk"><input type="checkbox" name="volunteer" value="yes">
+          Θέλω να συμμετέχω ενεργά στην οργάνωση δράσεων.</label>
+        <label class="chk"><input type="checkbox" name="consent" value="yes" required>
+          Συμφωνώ να λαμβάνω ενημερώσεις από την OSC Athens στο email μου. Μπορώ να διαγραφώ όποτε θέλω. *</label>
+        <button type="submit" class="btn">Υπογράφω <span class="ar">&rarr;</span></button>
+        <p class="msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- ============ JOIN ============ -->
 <section id="join">
   <div class="wrap">
@@ -380,10 +461,26 @@ footer .lk a:hover{color:var(--olive)}
       <a href="#why">Γιατί έχει σημασία</a>
       <a href="#events">Εκδηλώσεις</a>
       <a href="#team">Ομάδα</a>
+      <a href="#support">Υποστήριξη</a>
       <a href="#join">Συμμετοχή</a>
       <a href="/en/" hreflang="en">English</a>
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var f=document.getElementById('pledge-form'); if(!f) return;
+  var m=f.querySelector('.msg'), b=f.querySelector('button');
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); b.disabled=true; m.className='msg';
+    fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+      .then(function(r){ if(r.ok){ f.reset(); m.textContent=f.dataset.ok; m.className='msg ok'; }
+                         else { m.textContent=f.dataset.err; m.className='msg err'; } })
+      .catch(function(){ m.textContent=f.dataset.err; m.className='msg err'; })
+      .finally(function(){ b.disabled=false; });
+  });
+})();
+</script>
 </body>
 </html>
