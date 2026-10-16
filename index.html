@@ -65,7 +65,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(247,246,241,.88);
 .btn.ghost .ar{color:var(--olive)}
 
 /* ---------- hero ---------- */
-.hero{padding:96px 0 84px}
+.hero{padding:96px 32px 84px}
 .hero h1{font-size:clamp(38px,6vw,68px);font-weight:800;max-width:15ch}
 .hero .lead{font-size:20px;color:var(--slate);max-width:56ch;margin:26px 0 34px}
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
@@ -210,7 +210,7 @@ footer .lk a:hover{color:var(--olive)}
   .wrap{padding:0 20px}
   .grid-3,.cmp,.stats,.join{grid-template-columns:1fr}
   .team{grid-template-columns:1fr 1fr}
-  .hero{padding:60px 0 52px}
+  .hero{padding:60px 20px 52px}
   section{padding:56px 0}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
@@ -223,193 +223,71 @@ footer .lk a:hover{color:var(--olive)}
     <input type="checkbox" id="nav-t" aria-label="Menu">
     <label for="nav-t" class="burger" aria-hidden="true"><span></span></label>
     <nav>
-      <a href="#about">Ποιοι είμαστε</a>
-      <a href="#why">Γιατί έχει σημασία</a>
-      <a href="#events">Εκδηλώσεις</a>
-      <a href="#team">Ομάδα</a>
+      <a href="/#origins">Ποιοι είμαστε</a>
       <a href="/support/">Γίνε υποστηρικτής</a>
       <a href="/reading/">Αναγνωστήριο</a>
-      <a href="#contact" class="btn">Επικοινωνία <span class="ar">&rarr;</span></a>
+      <a href="/#contact" class="btn">Επικοινωνία <span class="ar">&rarr;</span></a>
       <a href="/en/" class="lang" hreflang="en" title="English">EN</a>
     </nav>
   </div>
 </header>
 <a id="top"></a>
 
-<!-- ============ HERO ============ -->
-<div class="wrap hero">
+<!-- ============ HERO / ORIGINS ============ -->
+<div class="wrap hero" id="origins">
   <div class="eyebrow">Κοινότητα Ανοικτής Επιστήμης Αθήνας</div>
-  <h1>Ανοικτή επιστήμη, χτισμένη μαζί.</h1>
-  <p class="lead">Ένα δίκτυο της ερευνητικής κοινότητας της Αθήνας που κάνει την ανοικτή επιστήμη
-    καθημερινή πρακτική, μέσα από αλληλοϋποστήριξη, κοινά εργαλεία και ανοικτό διάλογο.</p>
+  <h1 style="font-size:clamp(32px,4.6vw,52px);max-width:20ch">Από πού ξεκινήσαμε</h1>
+  <p class="lead" style="max-width:64ch;color:var(--dark)">Η Κοινότητα Ανοικτής Επιστήμης Αθήνας ξεκίνησε το 2023 μέσα από το Incubator Programme
+    του διεθνούς δικτύου INOSC, ως η πρώτη κοινότητα ανοικτής επιστήμης στην Ελλάδα που χτίζεται μέσα
+    από αυτό το δίκτυο. Απευθύνεται σε ολόκληρη την ερευνητική κοινότητα: ερευνητές, φοιτητές,
+    βιβλιοθηκονόμους και όσους υποστηρίζουν την έρευνα, γιατί η αλλαγή στον τρόπο που γίνεται η
+    έρευνα χρειάζεται όλους.</p>
   <div class="cta">
     <a href="/support/" class="btn">Γίνε υποστηρικτής <span class="ar">&rarr;</span></a>
-    <a href="#events" class="btn ghost">Δες τις επόμενες εκδηλώσεις <span class="ar">&rarr;</span></a>
+    <a href="/reading/" class="btn ghost">Αναγνωστήριο <span class="ar">&rarr;</span></a>
   </div>
   <div class="rule"></div>
 </div>
 
-<!-- ============ ORIGINS ============ -->
-<section id="origins" style="padding:56px 0">
+<!-- ============ AIMS ============ -->
+<section id="aims" style="border-top:1px solid var(--border)">
   <div class="wrap">
-    <div class="eyebrow">Από πού ξεκινήσαμε</div>
-    <p class="sec-lead" style="margin-top:0;max-width:64ch;font-size:19px;color:var(--dark)">Η Κοινότητα Ανοικτής Επιστήμης Αθήνας ξεκίνησε το 2023 μέσα από το Incubator Programme
-      του διεθνούς δικτύου INOSC, ως η πρώτη κοινότητα ανοικτής επιστήμης στην Ελλάδα που χτίζεται μέσα
-      από αυτό το δίκτυο. Απευθύνεται σε ολόκληρη την ερευνητική κοινότητα: ερευνητές, φοιτητές,
-      βιβλιοθηκονόμους και όσους υποστηρίζουν την έρευνα, γιατί η αλλαγή στον τρόπο που γίνεται η
-      έρευνα χρειάζεται όλους.</p>
-  </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section id="about">
-  <div class="wrap">
-    <div class="eyebrow">Σχετικά με την κοινότητα</div>
-    <h2 class="sec-h">Τι κάνουμε</h2>
-    <p class="sec-lead">Είμαστε ερευνητές και φοιτητές που πιστεύουμε ότι η ανοικτή πρακτική δουλεύει
-      καλύτερα όταν μοιράζεται. Ό,τι διοργανώνουμε είναι δωρεάν, ανεπίσημο και ανοικτό σε όποιον
-      βρίσκεται στην Αθήνα.</p>
+    <div class="eyebrow">Οι στόχοι μας</div>
+    <h2 class="sec-h">Τι θέλουμε να πετύχουμε</h2>
+    <p class="sec-lead">Πέντε κατευθύνσεις από το σχέδιο δράσης της κοινότητας. Ό,τι διοργανώνουμε
+      είναι δωρεάν, ανεπίσημο και ανοικτό σε όποιον ερευνά ή υποστηρίζει την έρευνα στην Αθήνα.</p>
     <div class="grid-3">
       <div class="card">
         <div class="num">01</div>
-        <h3>Εργαστήρια</h3>
-        <p>Πρακτικές συναντήσεις για αναπαραγωγιμότητα, ανοικτά δεδομένα και προδημοσιεύσεις.
-          Δεν χρειάζεται προηγούμενη εμπειρία, και κανείς δεν περιμένει να ξέρεις ήδη τις απαντήσεις.</p>
+        <h3>Εκπαίδευση και δεξιότητες</h3>
+        <p>Ρωτάμε την κοινότητα τι χρειάζεται να μάθει και διοργανώνουμε εργαστήρια: αρχές FAIR,
+          άδειες για ερευνητικά αποτελέσματα, αναπαραγωγιμότητα, σχέδια διαχείρισης δεδομένων,
+          ανοικτά εργαλεία.</p>
       </div>
       <div class="card">
         <div class="num">02</div>
-        <h3>Συνδέσεις</h3>
-        <p>Φέρνουμε κοντά ανθρώπους από διαφορετικά τμήματα και ιδρύματα που νοιάζονται για την
-          ανοικτή έρευνα, ώστε κανείς να μην χρειάζεται να τα βρει μόνος του.</p>
+        <h3>Υπηρεσίες</h3>
+        <p>Μεταφράζουμε και προσαρμόζουμε χρήσιμο υλικό στα ελληνικά, ώστε τα ιδρύματα να μπορούν
+          να χτίσουν τις δικές τους υπηρεσίες για τη διαχείριση ερευνητικών δεδομένων.</p>
       </div>
       <div class="card">
         <div class="num">03</div>
-        <h3>Πόροι</h3>
-        <p>Πρακτικοί οδηγοί, πρότυπα και υλικό που ο καθένας μπορεί να επαναχρησιμοποιήσει,
-          να προσαρμόσει και να μοιραστεί, με ανοικτή άδεια εξ ορισμού.</p>
+        <h3>Διακυβέρνηση</h3>
+        <p>Δουλεύουμε για πολιτικές ανοικτής επιστήμης στα ιδρύματα της Αθήνας, ξεκινώντας από
+          τη διαχείριση ερευνητικών δεδομένων, και φέρνουμε κοντά όσους μπορούν να τις γράψουν.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY ============ -->
-<section id="why">
-  <div class="wrap">
-    <div class="eyebrow">Γιατί έχει σημασία</div>
-    <h2 class="sec-h">Ανοικτή έναντι παραδοσιακής πρακτικής</h2>
-    <p class="sec-lead">Το επιχείρημα υπέρ της ανοικτής πρακτικής δεν είναι ιδεολογικό. Αφορά έρευνα
-      που οι άλλοι μπορούν πραγματικά να ελέγξουν, να επαναχρησιμοποιήσουν και να χτίσουν πάνω της.</p>
-    <div class="cmp">
-      <div class="col open">
-        <h3>Ανοικτή πρακτική</h3>
-        <ul>
-          <li>Δεδομένα και κώδικας διαθέσιμα εξ ορισμού</li>
-          <li>Μέθοδοι που μπορεί να αναπαραγάγει ο καθένας</li>
-          <li>Αναγνώριση μοιρασμένη σε όλους όσοι συνέβαλαν</li>
-        </ul>
+      <div class="card">
+        <div class="num">04</div>
+        <h3>Κίνητρα</h3>
+        <p>Αναδεικνύουμε όσους δουλεύουν ανοικτά και μοιράζονται την αναγνώριση, με στόχο το
+          πρώτο βραβείο ανοικτής επιστήμης στην Ελλάδα.</p>
       </div>
-      <div class="col trad">
-        <h3>Παραδοσιακή πρακτική</h3>
-        <ul>
-          <li>Δεδομένα ιδιωτικά, μόνο κατόπιν αιτήματος</li>
-          <li>Αποτελέσματα δύσκολο να επαληθευτούν ή να επαναληφθούν</li>
-          <li>Αναγνώριση συγκεντρωμένη σε λίγους</li>
-        </ul>
+      <div class="card">
+        <div class="num">05</div>
+        <h3>Περιβάλλον</h3>
+        <p>Χτίζουμε έναν χώρο συνάντησης και ένα πρόγραμμα μέντορα και μαθητευόμενου, ώστε κανείς
+          να μην ξεκινά την ανοικτή επιστήμη μόνος.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ NUMBERS ============ -->
-<!-- PLACEHOLDER: template figures. Replace with real numbers before promoting, or delete this section. -->
-<section id="numbers">
-  <div class="wrap">
-    <div class="eyebrow">Σε αριθμούς</div>
-    <h2 class="sec-h">Η κοινότητά μας μέχρι σήμερα</h2>
-    <div class="stats">
-      <div class="stat">
-        <div class="n">250+</div>
-        <div class="l">Μέλη της κοινότητας</div>
-        <div class="s">Σε ιδρύματα της Αθήνας</div>
-      </div>
-      <div class="stat">
-        <div class="n">40</div>
-        <div class="l">Εκδηλώσεις &amp; εργαστήρια</div>
-        <div class="s">Από την έναρξη</div>
-      </div>
-      <div class="stat">
-        <div class="n">12</div>
-        <div class="l">Συνεργαζόμενα ιδρύματα</div>
-        <div class="s">Πανεπιστήμια &amp; ερευνητικά κέντρα</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ QUOTE ============ -->
-<!-- PLACEHOLDER: template quote. Replace with a real member voice, with permission, or delete. -->
-<section id="voices">
-  <div class="wrap">
-    <div class="quote">
-      <div class="mark">&ldquo;</div>
-      <p>Η συμμετοχή στην OSC Athens άλλαξε τον τρόπο που δουλεύω. Μοιράζομαι νωρίτερα, ζητώ
-        βοήθεια πιο εύκολα, και η έρευνά μου είναι καλύτερη γι&rsquo; αυτό.</p>
-      <div class="who">Όνομα μέλους</div>
-      <div class="role">Υποψήφιος/α διδάκτορας &middot; Τμήμα</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TEAM ============ -->
-<!-- PLACEHOLDER: replace names, roles and initials. To add a photo, put an <img> inside .av -->
-<section id="team">
-  <div class="wrap">
-    <div class="eyebrow">Οι άνθρωποι</div>
-    <h2 class="sec-h">Βασική ομάδα</h2>
-    <p class="sec-lead">Μια μικρή ομάδα που κρατά τα πράγματα σε κίνηση. Πες μας ένα γεια σε κάποια εκδήλωση.</p>
-    <div class="team">
-      <div class="member">
-        <div class="av">ΦΜ</div>
-        <div class="nm">Φώτης Μυστακόπουλος</div>
-        <div class="rl">Συντονιστής</div>
-      </div>
-      <div class="member">
-        <div class="av">ΟΕ</div>
-        <div class="nm">Ονοματεπώνυμο</div>
-        <div class="rl">Ρόλος</div>
-      </div>
-      <div class="member">
-        <div class="av">ΟΕ</div>
-        <div class="nm">Ονοματεπώνυμο</div>
-        <div class="rl">Ρόλος</div>
-      </div>
-      <div class="member">
-        <div class="av">ΟΕ</div>
-        <div class="nm">Ονοματεπώνυμο</div>
-        <div class="rl">Ρόλος</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ EVENT ============ -->
-<!-- PLACEHOLDER: template event. Replace with a real one, or swap for a "no events scheduled, get in touch" message. -->
-<section id="events">
-  <div class="wrap">
-    <div class="eyebrow">Επόμενο εργαστήριο</div>
-    <h2 class="sec-h">Τι έρχεται</h2>
-    <div class="event">
-      <div>
-        <h3>Αναπαραγώγιμη έρευνα με ανοικτά εργαλεία</h3>
-        <p class="desc">Μια πρακτική συνάντηση για όποιον θέλει να κάνει την ανάλυσή του πιο εύκολη
-          να μοιραστεί και να επαναληφθεί. Δεν χρειάζεται προηγούμενη εμπειρία.</p>
-        <div class="facts">
-          <div class="fact"><div class="k">Ημερομηνία</div><div class="v">Πέμ. 12 Μαρτίου</div></div>
-          <div class="fact"><div class="k">Ώρα</div><div class="v">17:00&ndash;19:00</div></div>
-          <div class="fact"><div class="k">Χώρος</div><div class="v">Αίθουσα Β12, Κεντρική Πανεπιστημιούπολη</div></div>
-        </div>
-      </div>
-      <div><a href="#contact" class="btn">Δωρεάν εγγραφή <span class="ar">&rarr;</span></a></div>
     </div>
   </div>
 </section>
@@ -419,7 +297,7 @@ footer .lk a:hover{color:var(--olive)}
   <div class="wrap">
     <div class="eyebrow">Επικοινωνία</div>
     <h2 class="sec-h">Έλα σε επαφή</h2>
-    <p class="sec-lead">Ανοικτή σε κάθε ερευνητή και φοιτητή στην Αθήνα. Έλα σε μια εκδήλωση,
+    <p class="sec-lead">Ανοικτή σε όποιον ερευνά ή υποστηρίζει την έρευνα στην Αθήνα. Έλα σε μια εκδήλωση,
       πες ένα γεια, και χτίσε την ανοικτή επιστήμη μαζί μας.</p>
     <div class="join">
       <a href="mailto:info@osc-athens.org"><div class="k">Email</div><div class="v">info@osc-athens.org</div></a>
@@ -437,13 +315,10 @@ footer .lk a:hover{color:var(--olive)}
         Επικοινωνίας (INOSC). Το περιεχόμενο διατίθεται με ανοικτή άδεια, εκτός αν αναφέρεται διαφορετικά.</p>
     </div>
     <div class="lk">
-      <a href="#about">Ποιοι είμαστε</a>
-      <a href="#why">Γιατί έχει σημασία</a>
-      <a href="#events">Εκδηλώσεις</a>
-      <a href="#team">Ομάδα</a>
+      <a href="/#origins">Ποιοι είμαστε</a>
       <a href="/support/">Γίνε υποστηρικτής</a>
       <a href="/reading/">Αναγνωστήριο</a>
-      <a href="#contact">Επικοινωνία</a>
+      <a href="/#contact">Επικοινωνία</a>
       <a href="/en/" hreflang="en">English</a>
     </div>
   </div>

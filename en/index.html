@@ -65,7 +65,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(247,246,241,.88);
 .btn.ghost .ar{color:var(--olive)}
 
 /* ---------- hero ---------- */
-.hero{padding:96px 0 84px}
+.hero{padding:96px 32px 84px}
 .hero h1{font-size:clamp(38px,6vw,68px);font-weight:800;max-width:15ch}
 .hero .lead{font-size:20px;color:var(--slate);max-width:56ch;margin:26px 0 34px}
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
@@ -210,7 +210,7 @@ footer .lk a:hover{color:var(--olive)}
   .wrap{padding:0 20px}
   .grid-3,.cmp,.stats,.join{grid-template-columns:1fr}
   .team{grid-template-columns:1fr 1fr}
-  .hero{padding:60px 0 52px}
+  .hero{padding:60px 20px 52px}
   section{padding:56px 0}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
@@ -224,13 +224,10 @@ footer .lk a:hover{color:var(--olive)}
     <input type="checkbox" id="nav-t" aria-label="Menu">
     <label for="nav-t" class="burger" aria-hidden="true"><span></span></label>
     <nav>
-      <a href="#about">Who we are</a>
-      <a href="#why">Why it matters</a>
-      <a href="#events">Events</a>
-      <a href="#team">Team</a>
+      <a href="/en/#origins">Who we are</a>
       <a href="/en/support/">Become a supporter</a>
       <a href="/en/reading/">Reading corner</a>
-      <a href="#contact" class="btn">Contact <span class="ar">&rarr;</span></a>
+      <a href="/en/#contact" class="btn">Contact <span class="ar">&rarr;</span></a>
       <a href="/" class="lang" hreflang="el" title="Ελληνικά">EL</a>
     </nav>
   </div>
@@ -238,181 +235,59 @@ footer .lk a:hover{color:var(--olive)}
 
 <a id="top"></a>
 
-<!-- ============ HERO ============ -->
-<div class="wrap hero">
+<!-- ============ HERO / ORIGINS ============ -->
+<div class="wrap hero" id="origins">
   <div class="eyebrow">Open Science Community Athens</div>
-  <h1>Open science, built together.</h1>
-  <p class="lead">A network of the Athens research community making open science
-    the everyday norm, through peer support, shared tools and open conversation.</p>
+  <h1 style="font-size:clamp(32px,4.6vw,52px);max-width:20ch">Where we started</h1>
+  <p class="lead" style="max-width:64ch;color:var(--dark)">The Open Science Community Athens began in 2023 through the INOSC Incubator Programme,
+    as the first open science community in Greece built through that network. It is for the
+    whole research community: researchers, students, librarians and everyone who supports
+    research, because changing how research is done takes all of us.</p>
   <div class="cta">
     <a href="/en/support/" class="btn">Become a supporter <span class="ar">&rarr;</span></a>
-    <a href="#events" class="btn ghost">See upcoming events <span class="ar">&rarr;</span></a>
+    <a href="/en/reading/" class="btn ghost">Reading corner <span class="ar">&rarr;</span></a>
   </div>
   <div class="rule"></div>
 </div>
 
-<!-- ============ ORIGINS ============ -->
-<section id="origins" style="padding:56px 0">
+<!-- ============ AIMS ============ -->
+<section id="aims" style="border-top:1px solid var(--border)">
   <div class="wrap">
-    <div class="eyebrow">Where we started</div>
-    <p class="sec-lead" style="margin-top:0;max-width:64ch;font-size:19px;color:var(--dark)">The Open Science Community Athens began in 2023 through the INOSC Incubator Programme,
-      as the first open science community in Greece built through that network. It is for the
-      whole research community: researchers, students, librarians and everyone who supports
-      research, because changing how research is done takes all of us.</p>
-  </div>
-</section>
-
-<!-- ============ ABOUT ============ -->
-<section id="about">
-  <div class="wrap">
-    <div class="eyebrow">About the community</div>
-    <h2 class="sec-h">What we do</h2>
-    <p class="sec-lead">We are researchers and students who believe open practice works better when
-      it is shared. Everything we run is free, informal and open to anyone in Athens.</p>
+    <div class="eyebrow">Our aims</div>
+    <h2 class="sec-h">What we want to achieve</h2>
+    <p class="sec-lead">Five directions from the community&rsquo;s action plan. Everything we run is
+      free, informal and open to anyone who does or supports research in Athens.</p>
     <div class="grid-3">
       <div class="card">
         <div class="num">01</div>
-        <h3>Workshops</h3>
-        <p>Hands-on sessions on reproducibility, open data and preprints. No prior experience
-          needed, and nobody is expected to already know the answers.</p>
+        <h3>Training and skills</h3>
+        <p>We ask the community what it needs to learn and run workshops: FAIR principles,
+          licensing research outputs, reproducibility, data management plans, open tools.</p>
       </div>
       <div class="card">
         <div class="num">02</div>
-        <h3>Connections</h3>
-        <p>We bring together people across departments and institutions who care about open
-          research, so nobody has to figure it out alone.</p>
+        <h3>Services</h3>
+        <p>We translate and adapt useful material into Greek, so institutions can build their own
+          research data management services.</p>
       </div>
       <div class="card">
         <div class="num">03</div>
-        <h3>Resources</h3>
-        <p>Practical guides, templates and materials that anyone can reuse, adapt and pass on,
-          openly licensed by default.</p>
+        <h3>Governance</h3>
+        <p>We work towards open science policies at Athens institutions, starting with research data
+          management, and bring together the people who can write them.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHY ============ -->
-<section id="why">
-  <div class="wrap">
-    <div class="eyebrow">Why it matters</div>
-    <h2 class="sec-h">Open vs. traditional practice</h2>
-    <p class="sec-lead">The case for open practice is not ideological. It is about research that
-      other people can actually check, reuse and build on.</p>
-    <div class="cmp">
-      <div class="col open">
-        <h3>Open practice</h3>
-        <ul>
-          <li>Data and code shared by default</li>
-          <li>Methods reproducible by anyone</li>
-          <li>Credit spread across contributors</li>
-        </ul>
+      <div class="card">
+        <div class="num">04</div>
+        <h3>Incentives</h3>
+        <p>We recognise those who work openly and share credit, with the aim of establishing the
+          first open science award in Greece.</p>
       </div>
-      <div class="col trad">
-        <h3>Traditional practice</h3>
-        <ul>
-          <li>Data kept private, on request only</li>
-          <li>Results hard to verify or repeat</li>
-          <li>Recognition concentrated narrowly</li>
-        </ul>
+      <div class="card">
+        <div class="num">05</div>
+        <h3>Environment</h3>
+        <p>We build a meeting place and a mentor and mentee programme, so that nobody starts
+          open science alone.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ NUMBERS ============ -->
-<!-- PLACEHOLDER: these three figures come straight from the deck template.
-     Replace with real numbers before publishing, or delete this whole section. -->
-<section id="numbers">
-  <div class="wrap">
-    <div class="eyebrow">By the numbers</div>
-    <h2 class="sec-h">Our community so far</h2>
-    <div class="stats">
-      <div class="stat">
-        <div class="n">250+</div>
-        <div class="l">Community members</div>
-        <div class="s">Across Athens institutions</div>
-      </div>
-      <div class="stat">
-        <div class="n">40</div>
-        <div class="l">Events &amp; workshops</div>
-        <div class="s">Hosted since launch</div>
-      </div>
-      <div class="stat">
-        <div class="n">12</div>
-        <div class="l">Partner institutions</div>
-        <div class="s">Universities &amp; centres</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ QUOTE ============ -->
-<!-- PLACEHOLDER: template quote and attribution. Replace with a real member voice,
-     with their permission, or delete this section. -->
-<section id="voices">
-  <div class="wrap">
-    <div class="quote">
-      <div class="mark">&ldquo;</div>
-      <p>Joining OSC Athens changed how I work. I share earlier, ask for help sooner, and my
-        research is better for it.</p>
-      <div class="who">Member name</div>
-      <div class="role">PhD candidate &middot; Department</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TEAM ============ -->
-<!-- PLACEHOLDER: replace names, roles and initials. To add a photo, put an <img> inside .av -->
-<section id="team">
-  <div class="wrap">
-    <div class="eyebrow">The people</div>
-    <h2 class="sec-h">Core team</h2>
-    <p class="sec-lead">A small group keeping things running. Say hello to any of us at an event.</p>
-    <div class="team">
-      <div class="member">
-        <div class="av">FM</div>
-        <div class="nm">Fotis Mystakopoulos</div>
-        <div class="rl">Coordinator</div>
-      </div>
-      <div class="member">
-        <div class="av">FN</div>
-        <div class="nm">Full name</div>
-        <div class="rl">Role / focus</div>
-      </div>
-      <div class="member">
-        <div class="av">FN</div>
-        <div class="nm">Full name</div>
-        <div class="rl">Role / focus</div>
-      </div>
-      <div class="member">
-        <div class="av">FN</div>
-        <div class="nm">Full name</div>
-        <div class="rl">Role / focus</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ EVENT ============ -->
-<!-- PLACEHOLDER: template event. Replace with a real one, or swap this block for a
-     "no events scheduled, get in touch" message between events. -->
-<section id="events">
-  <div class="wrap">
-    <div class="eyebrow">Upcoming workshop</div>
-    <h2 class="sec-h">What's on</h2>
-    <div class="event">
-      <div>
-        <h3>Reproducible research with open tools</h3>
-        <p class="desc">A hands-on session for anyone who wants to make their analysis easier to
-          share and rerun. No prior experience needed.</p>
-        <div class="facts">
-          <div class="fact"><div class="k">Date</div><div class="v">Thu 12 March</div></div>
-          <div class="fact"><div class="k">Time</div><div class="v">17:00&ndash;19:00</div></div>
-          <div class="fact"><div class="k">Place</div><div class="v">Room B12, Main Campus</div></div>
-        </div>
-      </div>
-      <div><a href="#contact" class="btn">Register free <span class="ar">&rarr;</span></a></div>
     </div>
   </div>
 </section>
@@ -422,7 +297,7 @@ footer .lk a:hover{color:var(--olive)}
   <div class="wrap">
     <div class="eyebrow">Contact</div>
     <h2 class="sec-h">Get in touch</h2>
-    <p class="sec-lead">Open to every researcher and student in Athens. Come to an event, say
+    <p class="sec-lead">Open to anyone who does or supports research in Athens. Come to an event, say
       hello, and build open science with us.</p>
     <div class="join">
       <!-- PLACEHOLDER: point these at real destinations -->
@@ -441,13 +316,10 @@ footer .lk a:hover{color:var(--olive)}
         Communities (INOSC). Content openly licensed unless stated otherwise.</p>
     </div>
     <div class="lk">
-      <a href="#about">Who we are</a>
-      <a href="#why">Why it matters</a>
-      <a href="#events">Events</a>
-      <a href="#team">Team</a>
+      <a href="/en/#origins">Who we are</a>
       <a href="/en/support/">Become a supporter</a>
       <a href="/en/reading/">Reading corner</a>
-      <a href="#contact">Contact</a>
+      <a href="/en/#contact">Contact</a>
     </div>
   </div>
 </footer>
